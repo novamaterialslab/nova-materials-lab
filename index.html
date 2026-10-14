@@ -1,13 +1,12 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  html
-<link rel="icon" type="image/jpeg" href="./favicon.jpg">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="NOVA Materials Lab — Bilimle işlenmiş doğa. Sustainable materials and scientific innovation.">
+  <link rel="icon" type="image/jpeg" href="./favicon.jpg">
   <title>NOVA Materials Lab | Bilimle İşlenmiş Doğa</title>
+
   <style>
     * {
       box-sizing: border-box;
@@ -39,16 +38,19 @@
       border-bottom: 1px solid #292929;
     }
 
-    .brand {
-      font-size: 27px;
-      letter-spacing: 8px;
-      font-weight: 400;
+    .brand img {
+      width: 150px;
+      height: 48px;
+      object-fit: cover;
+      object-position: center;
+      display: block;
     }
 
     .tagline {
       font-size: 10px;
       color: #aaa;
       letter-spacing: 3px;
+      margin-top: 8px;
     }
 
     nav {
@@ -69,8 +71,8 @@
       justify-content: center;
       padding: 90px 12%;
       background:
-        radial-gradient(ellipse at 78% 45%,
-        #202020 0%, #101010 25%, #080808 62%);
+        linear-gradient(rgba(8,8,8,0.65), rgba(8,8,8,0.82)),
+        url("./nova-cover.png") center/cover no-repeat;
     }
 
     .eyebrow {
@@ -95,7 +97,7 @@
 
     .intro {
       max-width: 550px;
-      color: #aaa;
+      color: #ccc;
       font-size: 16px;
       margin-top: 25px;
     }
@@ -213,17 +215,13 @@
     }
   </style>
 </head>
-<body>
 
+<body>
   <header>
     <a href="#" aria-label="NOVA ana sayfa">
       <div class="brand">
-<img src="nova-logo.png" alt="NOVA Logo"
-     ```html
-<img src="nova-logo.png" alt="NOVA Logo"
-     style="width:150px; height:48px; object-fit:cover; object-position:center; display:block;">
-```
-</div>
+        <img src="./nova-logo.png" alt="NOVA Logo">
+      </div>
       <div class="tagline">BİLİMLE İŞLENMİŞ DOĞA</div>
     </a>
 
@@ -260,7 +258,7 @@
 
     <section class="content" id="research">
       <div class="section-label">Our focus</div>
-      <h2>Research & Innovation</h2>
+      <h2>Research &amp; Innovation</h2>
 
       <div class="cards">
         <article class="card">
@@ -316,6 +314,5 @@
     <span>Bilimle işlenmiş doğa.</span>
     <span>© 2026 NOVA</span>
   </footer>
-
 </body>
 </html>
