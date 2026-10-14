@@ -1,0 +1,313 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NOVA Materials Lab — Bilimle işlenmiş doğa. Sustainable materials and scientific innovation.">
+  <title>NOVA Materials Lab | Bilimle İşlenmiş Doğa</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #080808;
+      color: #f5f5f5;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 25px 8%;
+      border-bottom: 1px solid #292929;
+    }
+
+    .brand {
+      font-size: 27px;
+      letter-spacing: 8px;
+      font-weight: 400;
+    }
+
+    .tagline {
+      font-size: 10px;
+      color: #aaa;
+      letter-spacing: 3px;
+    }
+
+    nav {
+      display: flex;
+      gap: 25px;
+      font-size: 13px;
+      color: #ccc;
+    }
+
+    nav a:hover {
+      color: white;
+    }
+
+    .hero {
+      min-height: 78vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 90px 12%;
+      background:
+        radial-gradient(ellipse at 78% 45%,
+        #202020 0%, #101010 25%, #080808 62%);
+    }
+
+    .eyebrow {
+      color: #b7cbb8;
+      font-size: 12px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      margin-bottom: 25px;
+    }
+
+    h1 {
+      font-size: clamp(40px, 7vw, 78px);
+      line-height: 1.08;
+      font-weight: 400;
+      max-width: 850px;
+      letter-spacing: -2px;
+    }
+
+    h1 span {
+      color: #b7cbb8;
+    }
+
+    .intro {
+      max-width: 550px;
+      color: #aaa;
+      font-size: 16px;
+      margin-top: 25px;
+    }
+
+    .button {
+      display: inline-block;
+      border: 1px solid #aaa;
+      padding: 13px 22px;
+      margin-top: 32px;
+      font-size: 13px;
+      letter-spacing: 1px;
+      width: fit-content;
+      transition: 0.2s;
+    }
+
+    .button:hover {
+      background: white;
+      color: black;
+    }
+
+    section.content {
+      padding: 85px 12%;
+      border-top: 1px solid #252525;
+    }
+
+    .section-label {
+      color: #b7cbb8;
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      font-size: clamp(29px, 4vw, 45px);
+      font-weight: 400;
+      margin: 14px 0 20px;
+    }
+
+    .body-text {
+      max-width: 700px;
+      color: #aaa;
+      font-size: 15px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-top: 35px;
+    }
+
+    .card {
+      border: 1px solid #303030;
+      padding: 28px 22px;
+      min-height: 190px;
+      background: #0d0d0d;
+    }
+
+    .card .number {
+      color: #b7cbb8;
+      font-size: 12px;
+      letter-spacing: 2px;
+    }
+
+    .card h3 {
+      font-size: 19px;
+      font-weight: 400;
+      margin: 25px 0 10px;
+    }
+
+    .card p {
+      color: #999;
+      font-size: 13px;
+    }
+
+    .contact {
+      background: #101010;
+    }
+
+    footer {
+      padding: 25px 8%;
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      flex-wrap: wrap;
+      color: #777;
+      font-size: 12px;
+    }
+
+    @media (max-width: 650px) {
+      header {
+        align-items: flex-start;
+        gap: 20px;
+        flex-direction: column;
+        padding: 22px 6%;
+      }
+
+      nav {
+        gap: 17px;
+        flex-wrap: wrap;
+      }
+
+      .hero {
+        padding: 80px 7%;
+        min-height: 70vh;
+      }
+
+      section.content {
+        padding: 65px 7%;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="#" aria-label="NOVA ana sayfa">
+      <div class="brand">NOVA</div>
+      <div class="tagline">BİLİMLE İŞLENMİŞ DOĞA</div>
+    </a>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div class="eyebrow">Materials · Science · Sustainability</div>
+      <h1>Engineering a more <span>sustainable</span> future.</h1>
+      <p class="intro">
+        We explore the intersection of material science,
+        polymer engineering and sustainable innovation.
+        Turning scientific ideas into material solutions.
+      </p>
+      <a class="button" href="#research">DISCOVER NOVA ↗</a>
+    </div>
+
+    <section class="content" id="about">
+      <div class="section-label">Who we are</div>
+      <h2>Science shaped by nature.</h2>
+      <p class="body-text">
+        NOVA Materials Lab is an emerging materials innovation
+        initiative focused on sustainable materials, polymer
+        composites and the transformation of waste into
+        value-added material solutions.
+      </p>
+    </section>
+
+    <section class="content" id="research">
+      <div class="section-label">Our focus</div>
+      <h2>Research & Innovation</h2>
+
+      <div class="cards">
+        <article class="card">
+          <div class="number">01 / MATERIALS</div>
+          <h3>Polymer Composites</h3>
+          <p>Exploring polymer systems, composite formulations
+          and material performance.</p>
+        </article>
+
+        <article class="card">
+          <div class="number">02 / SUSTAINABILITY</div>
+          <h3>Waste Valorization</h3>
+          <p>Investigating how waste streams can become
+          valuable resources for new materials.</p>
+        </article>
+
+        <article class="card">
+          <div class="number">03 / ENGINEERING</div>
+          <h3>Material Development</h3>
+          <p>From formulation and processing to testing
+          and characterization.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="content" id="projects">
+      <div class="section-label">Our work</div>
+      <h2>Ideas into materials.</h2>
+      <p class="body-text">
+        We are building our research portfolio through
+        material development, experimental studies and
+        collaborations. More project details will be shared
+        as the work progresses.
+      </p>
+    </section>
+
+    <section class="content contact" id="contact">
+      <div class="section-label">Get in touch</div>
+      <h2>Let's build something meaningful.</h2>
+      <p class="body-text">
+        Interested in materials research or potential
+        collaborations? Connect with NOVA Materials Lab.
+      </p>
+      <a class="button"
+         href="https://www.linkedin.com/company/nova-materials-lab/">
+        CONNECT ON LINKEDIN ↗
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <span>NOVA MATERIALS LAB</span>
+    <span>Bilimle işlenmiş doğa.</span>
+    <span>© 2026 NOVA</span>
+  </footer>
+
+</body>
+</html>
